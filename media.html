@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Professional Portfolio - Interviews and Media Appearances of Yakubu Adam.">
+    <title>Interviews & Media | Yakubu Adam</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Lora:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome (for icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-logo">YAKUBU <span style="color: var(--primary-gold);">ADAM</span></div>
+        <div class="menu-toggle" id="mobile-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html#hero">Home</a></li>
+            <li><a href="education.html#education">Education & Experience</a></li>
+            <li><a href="lectures.html#lectures">Lectures & Research</a></li>
+            <li><a href="media.html#videos" class="active">Media & Press</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div style="margin-top: 80px;"></div>
+
+    <!-- Interviews & Videos Section -->
+    <section class="videos" id="videos"
+        style="background: var(--soft-gold); width: 100vw; max-width: none; margin-left: calc(-50vw + 50%);">
+        <div style="max-width: var(--container-width); margin: 0 auto; padding: 0 20px;">
+            <div class="section-header reveal">
+                <h2>Interviews & Videos</h2>
+            </div>
+            <div class="video-grid">
+                <!-- Video 1 -->
+                <div class="video-card reveal" onclick="openVideo('https://www.facebook.com/share/v/1GY9LD3i24/')">
+                    <div class="video-thumbnail">
+                        <video class="video-preview-placeholder" muted loop playsinline onmouseover="this.play()" onmouseout="this.pause()" poster="images/Tv3 interview 1.mp4" style="width: 100%; height: 100%; object-fit: cover;">
+                            <source src="images/Tv3 interview 1.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        
+                    </div>
+                    <div class="video-card-content">
+                        <span class="video-meta"><img src="images/TV3 logo.png" alt="TV3 Logo" class="video-meta-logo"> TV3 Ghana (National Televison)</span>
+                        <h3 class="serif">Topic: Lead Poisoning in Ghana</h3>
+                        <p>A discussion on the prevalence of lead poisoning in Ghana and its effects on public health.</p>
+                        <a href="https://www.facebook.com/share/v/1GY9LD3i24/" target="_blank" class="read-more" onclick="event.stopPropagation();">Watch on Facebook <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <!-- Video 2 -->
+                <div class="video-card reveal" style="transition-delay: 0.1s;"
+                    onclick="openVideo('https://www.facebook.com/share/v/pR993yLJAjTYcNsK/?mibextid=oFDknk')">
+                    <div class="video-thumbnail">
+                        <video class="video-preview-placeholder" muted loop playsinline onmouseover="this.play()" onmouseout="this.pause()" poster="images/video-thumb-2.jpg" style="width: 100%; height: 100%; object-fit: cover;">
+                            <source src="images/TV3 interview 2.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        
+                    </div>
+                    <div class="video-card-content">
+                        <span class="video-meta"><img src="images/TV3 logo.png" alt="TV3 Logo" class="video-meta-logo"> TV3 Ghana (National Television)</span>
+                        <h3 class="serif">Topic: Illegal mining and its health implications</h3>
+                        <p>An in-depth conversation with News Network regarding illegal mining and its health implications on Ghanaians.</p>
+                        <a href="https://www.facebook.com/share/v/pR993yLJAjTYcNsK/?mibextid=oFDknk" target="_blank" class="read-more" onclick="event.stopPropagation();">Watch on Facebook <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <!-- Video 3 -->
+                <div class="video-card reveal" style="transition-delay: 0.2s;"
+                    onclick="openVideo('https://www.facebook.com/share/v/6psPrvRLnaATXgmU/?mibextid=oFDknk')">
+                    <div class="video-thumbnail">
+                        <video class="video-preview-placeholder" muted loop playsinline onmouseover="this.play()" onmouseout="this.pause()" poster="images/video-thumb-3.jpg" style="width: 100%; height: 100%; object-fit: cover;">
+                            <source src="images/GTV Interview.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        
+                    </div>
+                    <div class="video-card-content">
+                        <span class="video-meta"><img src="images/GTV logo.png" alt="GTV Logo" class="video-meta-logo"> GTV Ghana (National Television)</span>
+                        <h3 class="serif">Topic: Illegal mining and its associated congenital anomalies</h3>
+                        <p>An in-depth conversation with News Network regarding illegal mining and its associated congenital anomalies in Ghana.</p>
+                        <a href="https://www.facebook.com/share/v/6psPrvRLnaATXgmU/?mibextid=oFDknk" target="_blank" class="read-more" onclick="event.stopPropagation();">Watch on Facebook <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <!-- Video 4 -->
+                <div class="video-card reveal" style="transition-delay: 0.3s;"
+                    onclick="openVideo('https://www.youtube.com/watch?v=uQ9faJQ1Qwc&pp=ygUYYWRla3llIG5zcm9tYSAxNi8wNC8yMDI0')">
+                    <div class="video-thumbnail">
+                        <video class="video-preview-placeholder" muted loop playsinline onmouseover="this.play()" onmouseout="this.pause()" poster="images/video-thumb-4.jpg" style="width: 100%; height: 100%; object-fit: cover;">
+                            <source src="videos/preview-4.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                       
+                    </div>
+                    <div class="video-card-content">
+                        <span class="video-meta"><img src="images/UTV logo.png" alt="UTV Logo" class="video-meta-logo"> United Television (UTV)</span>
+                        <h3 class="serif">Topic: Galamsey (illegal mining), a risk factor of kidney disease </h3>
+                        <p>An in-depth conversation with News Network regarding Galamsey (illegal mining), a risk factor of kidney disease in Ghana.</p>
+                        <a href="https://www.youtube.com/watch?v=uQ9faJQ1Qwc&pp=ygUYYWRla3llIG5zcm9tYSAxNi8wNC8yMDI0" target="_blank" class="read-more" onclick="event.stopPropagation();">Watch on YouTube <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+
+                    
+                </div>
+                <!-- Video 5 -->
+                <div class="video-card reveal" style="transition-delay: 0.4s;"
+                    onclick="openVideo('https://www.youtube.com/watch?v=tWaj_-FYoqQ')">
+                    <div class="video-thumbnail">
+                        <video class="video-preview-placeholder" muted loop playsinline onmouseover="this.play()" onmouseout="this.pause()" poster="images/video-thumb-4.jpg" style="width: 100%; height: 100%; object-fit: cover;">
+                            <source src="videos/preview-4.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                       
+                    </div>
+                    <div class="video-card-content">
+                        <span class="video-meta"><img src="images/peace fm logo.png" alt="HSTV Logo" class="video-meta-logo"> Peace FM</span>
+                        <h3 class="serif">Topic: Mercury usage and nephrotoxicity</h3>
+                        <p>An in-depth conversation with News Network regarding Mercury usage and nephrotoxicity in Ghana.</p>
+                        <a href="https://www.youtube.com/watch?v=tWaj_-FYoqQ" target="_blank" class="read-more" onclick="event.stopPropagation();">Watch on YouTube <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>  
+
+             
+
+                <!-- Video 6 -->
+                <div class="video-card reveal" style="transition-delay: 0.4s;"
+                    onclick="openVideo('https://www.facebook.com/reel/1460027475771847/?mibextid=rS40aB7S9Ucbxw6v')">
+                    <div class="video-thumbnail">
+                        <video class="video-preview-placeholder" muted loop playsinline onmouseover="this.play()" onmouseout="this.pause()" poster="images/video-thumb-4.jpg" style="width: 100%; height: 100%; object-fit: cover;">
+                            <source src="images/Food Adulteration.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                       
+                    </div>
+                    <div class="video-card-content">
+                        <span class="video-meta"><img src="images/UTV logo.png" alt="UTV Logo" class="video-meta-logo"> United Television (UTV)</span>
+                        <h3 class="serif">Food Adulterations and its effects on human health in Ghana </h3>
+                        <p>An in-depth conversation with News Network regarding Food Adulterations and its effects on human health in Ghana.</p>
+                        <a href="https://www.facebook.com/reel/1460027475771847/?mibextid=rS40aB7S9Ucbxw6v" target="_blank" class="read-more" onclick="event.stopPropagation();">Watch on Facebook <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div> 
+                
+                <!-- Video 7 -->
+                <div class="video-card reveal" style="transition-delay: 0.4s;"
+                    onclick="openVideo('https://www.facebook.com/reel/1472482921168485/?mibextid=rS40aB7S9Ucbxw6v')">
+                    <div class="video-thumbnail">
+                        <video class="video-preview-placeholder" muted loop playsinline onmouseover="this.play()" onmouseout="this.pause()" poster="images/video-thumb-4.jpg" style="width: 100%; height: 100%; object-fit: cover;">
+                            <source src="images/Nanotechnology .mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                       
+                    </div>
+                    <div class="video-card-content">
+                        <span class="video-meta"><img src="images/TV3 logo.png" alt="TV3 Logo" class="video-meta-logo"> TV3 Ghana</span>
+                        <h3 class="serif">Nanotechnology Usage in Water Treatment and its Effects on Human Health</h3>
+                        <p>An in-depth conversation with News Network regarding Nanotechnology Usage in Water Treatment and its Effects on Human Health.</p>
+                        <a href="https://www.facebook.com/reel/1472482921168485/?mibextid=rS40aB7S9Ucbxw6v" target="_blank" class="read-more" onclick="event.stopPropagation();">Watch on Facebook <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>  
+
+                <!-- Video 8 -->
+                <div class="video-card reveal" style="transition-delay: 0.4s;"
+                    onclick="openVideo('https://www.facebook.com/adam.yakubu/videos/1526321902089450/?mibextid=rS40aB7S9Ucbxw6v')">
+                    <div class="video-thumbnail">
+                        <video class="video-preview-placeholder" muted loop playsinline onmouseover="this.play()" onmouseout="this.pause()" poster="images/video-thumb-4.jpg" style="width: 100%; height: 100%; object-fit: cover;">
+                            <source src="images/Beauty Products PCOS.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                       
+                    </div>
+                    <div class="video-card-content">
+                        <span class="video-meta"><img src="images/Metro TV logo.png" alt="Metro TV Logo" class="video-meta-logo"> Metro TV Ghana</span>
+                        <h3 class="serif">Beauty Products and their contribution to PCOS</h3>
+                        <p>An in-depth conversation with News Network regarding Beauty Products and their contribution to PCOS.</p>
+                        <a href="https://www.facebook.com/adam.yakubu/videos/1526321902089450/?mibextid=rS40aB7S9Ucbxw6v" target="_blank" class="read-more" onclick="event.stopPropagation();">Watch on Facebook <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>  
+
+                <!-- Video 9 -->
+                <div class="video-card reveal" style="transition-delay: 0.4s;"
+                    onclick="openVideo('https://www.facebook.com/reel/2120761322063042/?mibextid=rS40aB7S9Ucbxw6v')">
+                    <div class="video-thumbnail">
+                        <video class="video-preview-placeholder" muted loop playsinline onmouseover="this.play()" onmouseout="this.pause()" poster="images/video-thumb-4.jpg" style="width: 100%; height: 100%; object-fit: cover;">
+                            <source src="images/Lead Poisoning.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                       
+                    </div>
+                    <div class="video-card-content">
+                        <span class="video-meta"><img src="images/TV3 logo.png" alt="TV3 Logo" class="video-meta-logo"> TV3 Ghana</span>
+                        <h3 class="serif">Tackling Lead Poisoning in Ghana</h3>
+                        <p>An in-depth conversation with News Network regarding Tackling Lead Poisoning in Ghana.</p>
+                        <a href="https://www.facebook.com/reel/2120761322063042/?mibextid=rS40aB7S9Ucbxw6v" target="_blank" class="read-more" onclick="event.stopPropagation();">Watch on Facebook <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>  
+
+                <!-- Video 10 -->
+                <div class="video-card reveal" style="transition-delay: 0.4s;"
+                    onclick="openVideo('https://www.facebook.com/reel/1370440914717854/?mibextid=rS40aB7S9Ucbxw6v')">
+                    <div class="video-thumbnail">
+                        <video class="video-preview-placeholder" muted loop playsinline onmouseover="this.play()" onmouseout="this.pause()" poster="images/video-thumb-4.jpg" style="width: 100%; height: 100%; object-fit: cover;">
+                            <source src="images/Ban on Cookware.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                       
+                    </div>
+                    <div class="video-card-content">
+                        <span class="video-meta"><img src="images/TV3 logo.png" alt="TV3 Logo" class="video-meta-logo"> TV3 Ghana</span>
+                        <h3 class="serif">Ban on Aluminium Cookware By FDA Ghana.</h3>
+                        <p>An in-depth conversation with News Network regarding Ban on Aluminium Cookware By FDA Ghana.</p>
+                        <a href="https://www.facebook.com/reel/1370440914717854/?mibextid=rS40aB7S9Ucbxw6v" target="_blank" class="read-more" onclick="event.stopPropagation();">Watch on Facebook <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>  
+
+                <!-- Video 11 -->
+                <div class="video-card reveal" style="transition-delay: 0.4s;"
+                    onclick="openVideo('https://www.facebook.com/reel/1370440914717854/?mibextid=rS40aB7S9Ucbxw6v')">
+                    <div class="video-thumbnail">
+                        <video class="video-preview-placeholder" muted loop playsinline onmouseover="this.play()" onmouseout="this.pause()" poster="images/video-thumb-4.jpg" style="width: 100%; height: 100%; object-fit: cover;">
+                            <source src="images/Galamsey Menace.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                       
+                    </div>
+                    <div class="video-card-content">
+                        <span class="video-meta"><img src="images/TV3 logo.png" alt="TV3 Logo" class="video-meta-logo"> TV3 Ghana</span>
+                        <h3 class="serif">The Galamsey Menace in Ghana.</h3>
+                        <p>An in-depth conversation with News Network regarding The Galamsey Menace in Ghana.</p>
+                        <a href="https://www.facebook.com/reel/1370440914717854/?mibextid=rS40aB7S9Ucbxw6v" target="_blank" class="read-more" onclick="event.stopPropagation();">Watch on Facebook <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>  
+
+                <!-- Video 12 -->
+                <div class="video-card reveal" style="transition-delay: 0.4s;"
+                    onclick="openVideo('https://www.facebook.com/reel/1114802830773231/?mibextid=rS40aB7S9Ucbxw6v')">
+                    <div class="video-thumbnail">
+                        <video class="video-preview-placeholder" muted loop playsinline onmouseover="this.play()" onmouseout="this.pause()" poster="images/video-thumb-4.jpg" style="width: 100%; height: 100%; object-fit: cover;">
+                            <source src="images/Treatment.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                       
+                    </div>
+                    <div class="video-card-content">
+                        <span class="video-meta"><img src="images/UTV logo.png" alt="UTV Logo" class="video-meta-logo"> UTV Ghana</span>
+                        <h3 class="serif">Mercury Poisoning from illegal mining in Ghana.</h3>
+                        <p>An in-depth conversation with News Network regarding Mercury Poisoning in Ghana.</p>
+                        <a href="https://www.facebook.com/reel/1114802830773231/?mibextid=rS40aB7S9Ucbxw6v" target="_blank" class="read-more" onclick="event.stopPropagation();">Watch on Facebook <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>  
+
+                <!-- Video 13 -->
+                <div class="video-card reveal" style="transition-delay: 0.4s;"
+                    onclick="openVideo('https://www.facebook.com/adam.yakubu/videos/1126503536161728/?mibextid=rS40aB7S9Ucbxw6v')">
+                    <div class="video-thumbnail">
+                        <video class="video-preview-placeholder" muted loop playsinline onmouseover="this.play()" onmouseout="this.pause()" poster="images/video-thumb-4.jpg" style="width: 100%; height: 100%; object-fit: cover;">
+                            <source src="images/Cure for PCOS.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                       
+                    </div>
+                    <div class="video-card-content">
+                        <span class="video-meta"><img src="images/TV3 logo.png" alt="TV3 Logo" class="video-meta-logo"> TV3 Ghana</span>
+                        <h3 class="serif">Is there a cure for PCOS?</h3>
+                        <p>An in-depth conversation with News Network regarding The Galamsey Menace in Ghana.</p>
+                        <a href="https://www.facebook.com/adam.yakubu/videos/1126503536161728/?mibextid=rS40aB7S9Ucbxw6v" target="_blank" class="read-more" onclick="event.stopPropagation();">Watch on Facebook <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div> 
+                
+                <!-- Video 14 -->
+                <div class="video-card reveal" style="transition-delay: 0.4s;"
+                    onclick="openVideo('https://www.facebook.com/adam.yakubu/videos/1019982162842160/?mibextid=rS40aB7S9Ucbxw6v')">
+                    <div class="video-thumbnail">
+                        <video class="video-preview-placeholder" muted loop playsinline onmouseover="this.play()" onmouseout="this.pause()" poster="images/video-thumb-4.jpg" style="width: 100%; height: 100%; object-fit: cover;">
+                            <source src="images/Video Part 1.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                       
+                    </div>
+                    <div class="video-card-content">
+                        <span class="video-meta"><img src="images/maranatha.jpg" alt="TV3 Logo" class="video-meta-logo">Maranatha University College</span>
+                        <h3 class="serif"> Effects of Some Cosmetic Products on your health: Part 1</h3>
+                        <p>A presentation to the University College Forum regarding The Effects of Some Cosmetic Products on your health</p>
+                        <a href="https://www.facebook.com/adam.yakubu/videos/1019982162842160/?mibextid=rS40aB7S9Ucbxw6v" target="_blank" class="read-more" onclick="event.stopPropagation();">Watch on Facebook <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div> 
+
+                <!-- Video 15 -->
+                <div class="video-card reveal" style="transition-delay: 0.4s;"
+                    onclick="openVideo('https://www.facebook.com/adam.yakubu/videos/9473022929490474/?mibextid=rS40aB7S9Ucbxw6v')">
+                    <div class="video-thumbnail">
+                        <video class="video-preview-placeholder" muted loop playsinline onmouseover="this.play()" onmouseout="this.pause()" poster="images/video-thumb-4.jpg" style="width: 100%; height: 100%; object-fit: cover;">
+                            <source src="images/Video Part 2.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                       
+                    </div>
+                    <div class="video-card-content">
+                        <span class="video-meta"><img src="images/maranatha.jpg" alt="TV3 Logo" class="video-meta-logo">Maranatha University College</span>
+                        <h3 class="serif"> Effects of Some Cosmetic Products on your health: Part 2</h3>
+                        <p>A conversation with the University College Forum on The Effects of Some Cosmetic Products on your health</p>
+                        <a href="https://www.facebook.com/adam.yakubu/videos/9473022929490474/?mibextid=rS40aB7S9Ucbxw6v" target="_blank" class="read-more" onclick="event.stopPropagation();">Watch on Facebook <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div> 
+
+                <!-- Video 16 -->
+                <div class="video-card reveal" style="transition-delay: 0.4s;"
+                    onclick="openVideo('https://www.facebook.com/reel/947396921157425/?mibextid=rS40aB7S9Ucbxw6v')">
+                    <div class="video-thumbnail">
+                        <video class="video-preview-placeholder" muted loop playsinline onmouseover="this.play()" onmouseout="this.pause()" poster="images/video-thumb-4.jpg" style="width: 100%; height: 100%; object-fit: cover;">
+                            <source src="images/Plastics in frying .mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                       
+                    </div>
+                    <div class="video-card-content">
+                        <span class="video-meta"><img src="images/TV3 logo.png" alt="TV3 Logo" class="video-meta-logo">TV3 Ghana</span>
+                        <h3 class="serif">Usage of Plastic Bags in Frying Plantain Chips</h3>
+                        <p>An in-depth conversation with Ghana's Most Popular Television Station, TV3, Ghana regarding Usage of Plastic Bags in Frying Platain Chips</p>
+                        <a href="https://www.facebook.com/reel/947396921157425/?mibextid=rS40aB7S9Ucbxw6v" target="_blank" class="read-more" onclick="event.stopPropagation();">Watch on Facebook <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div> 
+
+
+                <!-- Video 17 -->
+                <div class="video-card reveal" style="transition-delay: 0.4s;"
+                    onclick="openVideo('https://www.facebook.com/reel/4254042934840077/?mibextid=rS40aB7S9Ucbxw6v')">
+                    <div class="video-thumbnail">
+                        <video class="video-preview-placeholder" muted loop playsinline onmouseover="this.play()" onmouseout="this.pause()" poster="images/video-thumb-4.jpg" style="width: 100%; height: 100%; object-fit: cover;">
+                            <source src="images/MFWA Lectures.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                       
+                    </div>
+                    <div class="video-card-content">
+                        <span class="video-meta"><img src="images/MFWA logo.png" alt="MFWA Logo" class="video-meta-logo">Media Foundation for West Africa</span>
+                        <h3 class="serif">The Media and Food Safety</h3>
+                        <p>An in-depth conversation with Media Foundation for West Africa regarding The Media and Food Safety</p>
+                        <a href="https://www.facebook.com/reel/4254042934840077/?mibextid=rS40aB7S9Ucbxw6v" target="_blank" class="read-more" onclick="event.stopPropagation();">Watch on Facebook <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div> 
+
+                <!-- Video 18 -->
+                <div class="video-card reveal" style="transition-delay: 0.4s;"
+                    onclick="openVideo('https://www.facebook.com/reel/1342920354074195/?mibextid=rS40aB7S9Ucbxw6v')">
+                    <div class="video-thumbnail">
+                        <video class="video-preview-placeholder" muted loop playsinline onmouseover="this.play()" onmouseout="this.pause()" poster="images/video-thumb-4.jpg" style="width: 100%; height: 100%; object-fit: cover;">
+                            <source src="images/Mercury Travels.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                       
+                    </div>
+                    <div class="video-card-content">
+                        <span class="video-meta"><img src="images/UTV logo.png" alt="UTV Logo" class="video-meta-logo">UTV Ghana</span>
+                        <h3 class="serif">Mercury Travels...</h3>
+                        <p>An in-depth conversation with UTV Ghana regarding how mercury from illegal mining travels in the soil and into our daily meals</p>
+                        <a href="https://www.facebook.com/reel/1342920354074195/?mibextid=rS40aB7S9Ucbxw6v" target="_blank" class="read-more" onclick="event.stopPropagation();">Watch on Facebook <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div> 
+
+                <!-- Video 19 -->
+                <div class="video-card reveal" style="transition-delay: 0.4s;"
+                    onclick="openVideo('https://www.facebook.com/adam.yakubu/videos/1599071284410341/?mibextid=rS40aB7S9Ucbxw6v')">
+                    <div class="video-thumbnail">
+                        <video class="video-preview-placeholder" muted loop playsinline onmouseover="this.play()" onmouseout="this.pause()" poster="images/video-thumb-4.jpg" style="width: 100%; height: 100%; object-fit: cover;">
+                            <source src="images/Toxins in food.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                       
+                    </div>
+                    <div class="video-card-content">
+                        <span class="video-meta"><img src="images/TV3 logo.png" alt="TV3 Logo" class="video-meta-logo">TV3 Ghana</span>
+                        <h3 class="serif">Toxins in Food</h3>
+                        <p>An in-depth conversation with TV3 Ghana regarding how toxins from illegal mining end up on our plates</p>
+                        <a href="https://www.facebook.com/adam.yakubu/videos/1599071284410341/?mibextid=rS40aB7S9Ucbxw6v" target="_blank" class="read-more" onclick="event.stopPropagation();">Watch on Facebook <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div> 
+
+                <!-- Video 20 -->
+                <div class="video-card reveal" style="transition-delay: 0.4s;"
+                    onclick="openVideo('https://www.facebook.com/adam.yakubu/videos/1984307572096579/?mibextid=rS40aB7S9Ucbxw6v')">
+                    <div class="video-thumbnail">
+                        <video class="video-preview-placeholder" muted loop playsinline onmouseover="this.play()" onmouseout="this.pause()" poster="images/video-thumb-4.jpg" style="width: 100%; height: 100%; object-fit: cover;">
+                            <source src="images/Everyday.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                       
+                    </div>
+                    <div class="video-card-content">
+                        <span class="video-meta"><img src="images/UTV logo.png" alt="UTV Logo" class="video-meta-logo">UTV Ghana</span>
+                        <h3 class="serif">How Everyday Products Contribute to PCOS in Women</h3>
+                        <p>An in-depth conversation with UTV Ghana regarding how everyday products contribute to Polycystic Ovarian Syndrome in Women</p>
+                        <a href="https://www.facebook.com/adam.yakubu/videos/1984307572096579/?mibextid=rS40aB7S9Ucbxw6v" target="_blank" class="read-more" onclick="event.stopPropagation();">Watch on Facebook <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div> 
+
+                <!-- Video 21 -->
+                <div class="video-card reveal" style="transition-delay: 0.4s;"
+                    onclick="openVideo('https://www.facebook.com/adam.yakubu/videos/1080004200403151/?mibextid=rS40aB7S9Ucbxw6v')">
+                    <div class="video-thumbnail">
+                        <video class="video-preview-placeholder" muted loop playsinline onmouseover="this.play()" onmouseout="this.pause()" poster="images/video-thumb-4.jpg" style="width: 100%; height: 100%; object-fit: cover;">
+                            <source src="images/Galamsey and food.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                       
+                    </div>
+                    <div class="video-card-content">
+                        <span class="video-meta"><img src="images/HSTV logo.jpg" alt="HS TV Logo" class="video-meta-logo">Health and Safety Television</span>
+                        <h3 class="serif">How Galamsey Contaminates Our Food</h3>
+                        <p>An in-depth conversation with Health and Safety Television regarding how galamsey activities contribute to food contamination in Ghana</p>
+                        <a href="https://www.facebook.com/adam.yakubu/videos/1080004200403151/?mibextid=rS40aB7S9Ucbxw6v" target="_blank" class="read-more" onclick="event.stopPropagation();">Watch on Facebook <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div> 
+
+                <!-- Video 22 -->
+                <div class="video-card reveal" style="transition-delay: 0.4s;"
+                    onclick="openVideo('https://www.facebook.com/adam.yakubu/videos/1009867977604890/?mibextid=rS40aB7S9Ucbxw6v')">
+                    <div class="video-thumbnail">
+                        <video class="video-preview-placeholder" muted loop playsinline onmouseover="this.play()" onmouseout="this.pause()" poster="images/video-thumb-4.jpg" style="width: 100%; height: 100%; object-fit: cover;">
+                            <source src="images/Starr Fm.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                       
+                    </div>
+                    <div class="video-card-content">
+                        <span class="video-meta"><img src="images/Starr FM logo.jpg" alt="Starr FM Logo" class="video-meta-logo">Starr FM Ghana</span>
+                        <h3 class="serif">Effects of Galamsey on our health</h3>
+                        <p>An in-depth conversation with Starr FM Ghana regarding the effects of galamsey activities on our health in Ghana</p>
+                        <a href="https://www.facebook.com/adam.yakubu/videos/1009867977604890/?mibextid=rS40aB7S9Ucbxw6v" target="_blank" class="read-more" onclick="event.stopPropagation();">Watch on Facebook <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div> 
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Modal -->
+    <div class="video-modal" id="videoModal">
+        <span class="close-modal">&times;</span>
+        <div class="modal-content">
+            <iframe id="videoPlayer" src="" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-info">
+                <div class="footer-logo">YAKUBU <span style="color: var(--primary-gold);">ADAM</span></div>
+                <p>Distinguished toxicologist and researcher dedicated to the advancement of medical science and
+                    academic excellence.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html#hero">Home</a></li>
+                    <li><a href="education.html#education">Education & Experience</a></li>
+                    <li><a href="lectures.html#lectures">Lectures & Research</a></li>
+                    <li><a href="media.html#videos">Media & Press</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="education.html">Academic Vitae</a></li>
+                    <li><a href="media.html">Resource Library</a></li>
+                    <li><a href="lectures.html">Newsletter</a></li>
+                    <li><a href="media.html">For Students</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Contact</h4>
+                <p>Achimota - Accra<br>Ghana<br>yakubu.adam008@gmail.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Yakubu Adam. All Rights Reserved. Built by Jay Kidlat</p>
+        </div>
+    </footer>
+
+    <!-- Back to top -->
+    <div class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>
